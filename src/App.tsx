@@ -1,14 +1,18 @@
 import { Dispatch, useReducer } from "react";
 import "./App.css";
 
+//Define types for the pizza data and state
 type PizzaData = {
   numberOfPeople: number;
   slicesPerPerson: number;
   slicesPerPie: number;
 };
 
+// Extend PizzaData to include pizzasNeeded
 type PizzaState = PizzaData & { pizzasNeeded: number };
 
+
+//Define the types of actions that can be dispatched
 type PizzaAction = {
   type:
     | "UPDATE_NUMBER_OF_PEOPLE"
@@ -17,6 +21,7 @@ type PizzaAction = {
   payload: number;
 };
 
+//Calculate the number of pizzas needed based on the pizza data
 const calculatePizzasNeeded = ({
   numberOfPeople,
   slicesPerPerson,
@@ -25,10 +30,12 @@ const calculatePizzasNeeded = ({
   return Math.ceil((numberOfPeople * slicesPerPerson) / slicesPerPie);
 };
 
+//Add pizzassNeeded to the pizza data and return a new PizzaState object
 const addPizzassNeededToPizzaData = (data: PizzaData): PizzaState => {
   return { ...data, pizzasNeeded: calculatePizzasNeeded(data) };
 };
 
+//Define the initial state for the pizza calculator
 const initialState: PizzaState = {
   numberOfPeople: 8,
   slicesPerPerson: 2,
@@ -36,6 +43,8 @@ const initialState: PizzaState = {
   pizzasNeeded: 2,
 };
 
+
+//Reducer function to handle state updates based on dispatched actions
 const reducer = (state: PizzaState, action: PizzaAction) => {
   if (action.type === "UPDATE_NUMBER_OF_PEOPLE") {
     return addPizzassNeededToPizzaData({
@@ -58,6 +67,7 @@ const reducer = (state: PizzaState, action: PizzaAction) => {
   return state;
 };
 
+//Component to display the calculated pizza needed
 const Calculation = ({ count }: { count: any }) => {
   return (
     <section className="calculation">
@@ -67,6 +77,7 @@ const Calculation = ({ count }: { count: any }) => {
   );
 };
 
+//Component to handle input fields for the pizza data
 const Calculator = ({
   dispatch,
   state,
@@ -121,6 +132,7 @@ const Calculator = ({
 };
 
 function App() {
+  // Use useReducer hook to manage state using the reducer finction
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
