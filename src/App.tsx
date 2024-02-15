@@ -132,7 +132,7 @@ const Calculator = ({
 };
 
 function App() {
-  // Use useReducer hook to manage state using the reducer finction
+  // Use useReducer hook to manage state using the reducer function
   const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
