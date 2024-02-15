@@ -18,7 +18,7 @@ Welcome to the Pizza Calculator application! This app helps you calculate how ma
 
 Check out the [Pizza Calculator Demo](https://sweet-chebakia-e628b3.netlify.app/) to see the app in action!
 
-![Pizza Calculator]("/demo.png")
+<img src="/demo.png" alt="Pizza Calculator Demo">
 
 ## Get Started
 
