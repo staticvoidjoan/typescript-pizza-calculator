@@ -1,0 +1,66 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+input {
+  padding: 1em;
+  background-color: transparent;
+  color: white;
+  border:solid white;
+  &:not([type="submit"]){
+    display: block;
+    margin: 0.em;
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  background-color: white;
+  color: white;
+}
+
+
+form {
+  padding: 0.5em;
+  margin: 1em 0 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  label{
+    text-align: center;
+    display: block;
+    margin: 1.5em 0 0.5em 0;
+  }
+}
+
+.calculator {
+  border: 5px solid white;
+  font-weight: 700;
+  margin: 2em auto;
+  padding: 1em;
+  width: 600px;
+}
+
+.calculation{
+  padding: 1em;
+  margin: 1em;
+  background-color: transparent;
+}
+
+.count {
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+}
+
+.caption{
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+}

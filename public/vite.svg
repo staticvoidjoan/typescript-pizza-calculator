@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Pizza -->
+  <circle cx="150" cy="150" r="140" fill="#FFD700" /> <!-- pizza base -->
+  <circle cx="150" cy="150" r="120" fill="#FF6347" /> <!-- pizza sauce -->
+  <circle cx="150" cy="150" r="100" fill="#FFD700" /> <!-- cheese -->
+  <circle cx="150" cy="150" r="80" fill="#FFA07A" /> <!-- topping -->
+  <circle cx="150" cy="150" r="60" fill="#FFD700" /> <!-- cheese -->
+  <circle cx="150" cy="150" r="40" fill="#FF6347" /> <!-- sauce -->
+  <circle cx="150" cy="150" r="20" fill="#FFD700" /> <!-- cheese -->
+  
+  <!-- Calculator -->
+  <!-- Body -->
+  <rect x="50" y="50" width="200" height="200" fill="#000000" />
+  <!-- Screen -->
+  <rect x="60" y="60" width="180" height="40" fill="#808080" />
+  <!-- Buttons -->
+  <!-- Row 1 -->
+  <rect x="60" y="110" width="40" height="30" fill="#808080" />
+  <rect x="110" y="110" width="40" height="30" fill="#808080" />
+  <rect x="160" y="110" width="40" height="30" fill="#808080" />
+  <!-- Row 2 -->
+  <rect x="60" y="150" width="40" height="30" fill="#808080" />
+  <rect x="110" y="150" width="40" height="30" fill="#808080" />
+  <rect x="160" y="150" width="40" height="30" fill="#808080" />
+  <!-- Row 3 -->
+  <rect x="60" y="190" width="40" height="30" fill="#808080" />
+  <rect x="110" y="190" width="40" height="30" fill="#808080" />
+  <rect x="160" y="190" width="40" height="30" fill="#808080" />
+</svg>
