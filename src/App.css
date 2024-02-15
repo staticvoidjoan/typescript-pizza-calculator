@@ -9,11 +9,15 @@ input {
   padding: 1em;
   background-color: transparent;
   color: white;
-  border:solid white;
-  &:not([type="submit"]){
+  border: solid white;
+  &:not([type="submit"]) {
     display: block;
-    margin: 0.em;
+    margin: 0em;
   }
+}
+
+input:focus {
+  outline: none;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -22,13 +26,12 @@ input[type="number"]::-webkit-inner-spin-button {
   color: white;
 }
 
-
 form {
   padding: 0.5em;
   margin: 1em 0 0.5em 0;
   display: flex;
   flex-direction: column;
-  label{
+  label {
     text-align: center;
     display: block;
     margin: 1.5em 0 0.5em 0;
@@ -43,7 +46,7 @@ form {
   width: 600px;
 }
 
-.calculation{
+.calculation {
   padding: 1em;
   margin: 1em;
   background-color: transparent;
@@ -55,12 +58,12 @@ form {
   margin: 0;
 }
 
-.caption{
+.caption {
   font-size: 1.5em;
   text-align: center;
 }
 
-.controls{
+.controls {
   display: flex;
   justify-content: center;
 }

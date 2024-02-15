@@ -91,7 +91,7 @@ const Calculator = ({
         event.preventDefault();
       }}
     >
-      <label htmlFor="number-of-people">NUmber of people</label>
+      <label htmlFor="number-of-people">Number of people</label>
       <input
         id="number-of-people"
         type="number"
